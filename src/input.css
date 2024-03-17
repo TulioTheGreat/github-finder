@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Inter Regular";
+  src: url(./fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Inter Bold";
+  src: url(./fonts/Inter-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Inter Semibold";
+  src: url(./fonts/Inter-SemiBold.ttf);
+}
+
+.body {
+  @apply w-screen overflow-hidden bg-neutral-950 font-regular text-neutral-50;
+}
+
+.header {
+  @apply p-8;
+}
+
+.nav {
+  @apply flex items-center justify-between text-neutral-500;
+}
+
+.left-list {
+  @apply flex items-center gap-2;
+}
+
+.left-list h3,
+a {
+  @apply rounded-md px-4 py-2 transition-all duration-200 ease-in-out hover:bg-neutral-900 hover:text-neutral-50;
+}
+
+.left-list h3 {
+  @apply cursor-default font-bold text-xl text-neutral-200 hover:bg-transparent;
+}
+
+.right-list a {
+  @apply flex items-center gap-2;
+}
+
+.main {
+  @apply px-[20rem];
+}
+
+.hero {
+  @apply flex h-[70vh] items-center justify-around;
+}
+
+.hero-left {
+  @apply flex flex-col;
+}
+
+.hero-title {
+  @apply flex w-full flex-col gap-2 text-left;
+}
+
+.hero-title h1 {
+  @apply bg-gradient-to-l from-rose-500 to-neutral-100 bg-clip-text font-bold text-8xl text-transparent;
+}
+
+.hero-title p {
+  @apply text-xl text-neutral-400;
+}
+
+.search-container {
+  @apply mt-[2rem] flex w-full items-center gap-2 rounded-full border-[2px] border-neutral-400 bg-transparent px-4 py-2;
+}
+
+.search-container .search-button {
+  @apply flex cursor-pointer items-center;
+}
+
+.search-container ion-icon {
+  @apply text-xl text-neutral-400;
+}
+
+.search-container input {
+  @apply w-full bg-transparent text-neutral-500 outline-none;
+}
+
+.circles-background {
+  @apply absolute left-[50%] top-[50%] z-[-1] flex translate-x-[-50%] translate-y-[-50%] opacity-60 blur-3xl;
+}
+
+.circle {
+  @apply h-[30rem] w-[40rem] rounded-full;
+}
+
+.hero-right {
+  @apply relative flex h-full items-center;
+}
+
+.cards-container {
+  @apply flex;
+}
+
+.cards {
+  @apply h-[40rem] w-[40rem];
+}
+
+.card {
+  @apply absolute flex w-[20rem] cursor-default flex-col gap-8 rounded-lg border-[1px] border-neutral-700 bg-neutral-900 px-6 py-8 shadow-[0_15px_30px_-5px] shadow-neutral-800 transition-all duration-300 hover:skew-x-[-2deg] hover:scale-[1.10] hover:border-neutral-400;
+}
+
+.card1 {
+  @apply left-20 top-20;
+}
+
+.card2 {
+  @apply bottom-20 right-20;
+}
+
+.card-top {
+  @apply flex items-center justify-start gap-4;
+}
+
+.card-top-text {
+  @apply flex flex-col;
+}
+
+.card-top-text h4 {
+  @apply text-neutral-500;
+}
+
+.card-top-text p {
+  @apply pt-2 text-sm;
+}
+
+.image {
+  @apply h-[4rem] w-[4rem] rounded-full bg-cover bg-center;
+}
+
+.card1 .profile-image {
+  @apply h-[4rem] w-[4rem] rounded-full bg-[url('/src/img/gengar.png')] bg-cover bg-center;
+}
+
+.profile-image2 {
+  @apply h-[4rem] w-[4rem] rounded-full bg-[url('/src/img/minion.png')] bg-cover bg-center;
+}
+
+.card-mid .stats,
+.followers {
+  @apply flex items-center justify-start gap-2;
+}
+
+.divider {
+  @apply h-[4px] w-[4px] rounded-full bg-neutral-500;
+}
+
+.card-bottom {
+  @apply flex justify-center;
+}
+
+.card-bottom .repository {
+  @apply flex h-[6rem] w-full flex-col gap-2 rounded-md border-[1px] border-neutral-600 p-4;
+}
+
+.repository .repository-title {
+  @apply flex items-center gap-2;
+}
+
+.repository-description p {
+  @apply text-sm text-neutral-500;
+}
+
+.search-card-container {
+  @apply opacity-100 transition-opacity duration-300 [display:none];
+}
+
+.search-card {
+  @apply flex w-[20rem] cursor-default flex-col gap-8 rounded-lg border-[1px] border-neutral-700 bg-neutral-900 px-6 py-8 shadow-[0_15px_30px_-5px] shadow-neutral-800 transition-all duration-300 hover:skew-x-[-2deg] hover:scale-[1.10] hover:border-neutral-400;
+}

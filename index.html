@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="/src/js/index.js" defer></script>
+  <link href="/src/output.css" rel="stylesheet" />
+  <title>🚀 Github Finder</title>
+</head>
+
+<body class="body">
+  <header class="header">
+    <nav class="nav">
+      <ul class="left-list">
+        <h3>github finder</h3>
+        <li><a href="#">Documentation</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+
+      <ul class="right-list">
+        <li>
+          <a href="https://github.com/TulioTheGreat/github-finder"><ion-icon name="logo-github"></ion-icon><span>Github</span></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main">
+    <section class="hero">
+      <div class="hero-left">
+        <div class="hero-title">
+          <h1>github<br />finder</h1>
+          <p>Find your github profile!</p>
+        </div>
+
+        <div class="search-container">
+          <button class="search-button" id="searchButton"><ion-icon name="search"></ion-icon></button>
+          <input type="search" name="search" id="search" />
+        </div>
+        <div class="circles-background">
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="cards-container" id="cardsContainer">
+          <div class="cards" id="cards">
+            <div class="card card1">
+              <div class="card-top">
+                <div class="profile-image"></div>
+                <div class="card-top-text">
+                  <h3>Ethan</h3>
+                  <h4>ethanlegend123</h4>
+                </div>
+              </div>
+              <div class="card-mid">
+                <div class="stats">
+                  <div class="followers">
+                    <ion-icon name="people-outline"></ion-icon>
+                    <p>120 followers</p>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="following">
+                    <p>215 following</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-bottom">
+                <div class="repository">
+                  <div class="repository-title">
+                    <ion-icon name="git-branch-outline"></ion-icon>
+                    <h3>app-tools</h3>
+                  </div>
+
+                  <div class="repository-description">
+                    <p>App Tools is an software...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card card2">
+              <div class="card-top">
+                <div class="profile-image2"></div>
+                <div class="card-top-text">
+                  <h3>Marcos</h3>
+                  <h4>imthebestmarcos</h4>
+                </div>
+              </div>
+              <div class="card-mid">
+                <div class="stats">
+                  <div class="followers">
+                    <ion-icon name="people-outline"></ion-icon>
+                    <p>57 followers</p>
+                  </div>
+                  <div class="divider"></div>
+                  <div class="following">
+                    <p>92 following</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card-bottom">
+                <div class="repository">
+                  <div class="repository-title">
+                    <ion-icon name="git-branch-outline"></ion-icon>
+                    <h3>electron-app</h3>
+                  </div>
+
+                  <div class="repository-description">
+                    <p>Simple Electron app for...</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="search-card-container" id="searchCardContainer">
+          <div class="search-card">
+            <div class="card-top">
+              <div><img class="image" id="profile-image" src="" alt="userImage"></div>
+              <div class="card-top-text">
+                <h3 id="name"></h3>
+                <h4 id="username"></h4>
+              </div>
+            </div>
+            <div class="card-mid">
+              <div class="stats">
+                <div class="followers">
+                  <ion-icon name="people-outline"></ion-icon>
+                  <p id="followers"></p>
+                </div>
+                <div class="divider"></div>
+                <div class="following">
+                  <p id="following"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-bottom">
+              <div class="repository">
+                <div class="repository-title">
+                  <ion-icon name="git-branch-outline"></ion-icon>
+                  <h3 id="repository"></h3>
+                </div>
+
+                <div class="repository-description">
+                  <p id="description"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"></footer>
+</body>
+
+</html>

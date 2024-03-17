@@ -139,11 +139,11 @@ a {
 }
 
 .card1 .profile-image {
-  @apply h-[4rem] w-[4rem] rounded-full bg-[url('/src/img/gengar.png')] bg-cover bg-center;
+  @apply h-[4rem] w-[4rem] rounded-full bg-[url('./src/img/gengar.png')] bg-cover bg-center;
 }
 
 .profile-image2 {
-  @apply h-[4rem] w-[4rem] rounded-full bg-[url('/src/img/minion.png')] bg-cover bg-center;
+  @apply h-[4rem] w-[4rem] rounded-full bg-[url('./src/img/minion.png')] bg-cover bg-center;
 }
 
 .card-mid .stats,
